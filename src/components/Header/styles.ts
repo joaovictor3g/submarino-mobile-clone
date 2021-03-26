@@ -36,7 +36,7 @@ export const Input = styled.TextInput`
 export const Separator = styled.View`
     width: 100%  !important;
     padding: 0  !important;
-    background: #ddd;
+    background: #000;
     height: 0.5px;
     margin-top: 10px;
     margin-bottom: 6px;

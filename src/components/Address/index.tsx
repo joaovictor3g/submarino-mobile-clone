@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Dimensions, View } from 'react-native';
 import { AddButton, AddressContent, AddressInfo, Container, ContainerOpenModal, Indicator, Input, Text } from './styles';
 import { Ionicons, FontAwesome } from '@expo/vector-icons';
 

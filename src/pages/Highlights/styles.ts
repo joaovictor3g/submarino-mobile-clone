@@ -7,7 +7,7 @@ export const Container = styled.View`
 `;
 
 export const ScrollHorizontal = styled.ScrollView`
-
+    max-height: 130px;
 `;
 
 export const ContainerOfferItems = styled.View`
@@ -18,7 +18,6 @@ export const ContainerOfferItems = styled.View`
     justify-content: space-between;
     max-width: 110%;
     padding-right: 15px;
-    height: 130px;
     
 `;
 

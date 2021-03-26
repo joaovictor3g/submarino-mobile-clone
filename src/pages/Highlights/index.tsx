@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text } from "react-native";
+import { Text } from "react-native";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Container, ContainerOfferItems, LabelAndOffer, OfferItem, ScrollHorizontal } from './styles';
@@ -16,7 +16,10 @@ export function Highlights() {
                 
             />
             <Container>
-                <ScrollHorizontal horizontal>
+                <ScrollHorizontal 
+                    horizontal
+                    showsHorizontalScrollIndicator={false}
+                >
                     <ContainerOfferItems>
                         <LabelAndOffer>
                             <OfferItem>
@@ -27,7 +30,7 @@ export function Highlights() {
                                 Ofertas 
                                
                             </Text>
-                            <Text style={{ marginTop: 10, fontWeight: 'bold' }}>
+                            <Text style={{ fontWeight: 'bold' }}>
                                 WOW 
                                
                             </Text>
@@ -39,7 +42,7 @@ export function Highlights() {
                             </OfferItem>
 
                             <Text style={{ marginTop: 10, fontWeight: 'bold' }}>Cupons do</Text>
-                            <Text style={{ marginTop: 10, fontWeight: 'bold' }}>Sub </Text>
+                            <Text style={{ fontWeight: 'bold' }}>Sub </Text>
                         </LabelAndOffer>
 
                         <LabelAndOffer>
@@ -65,16 +68,16 @@ export function Highlights() {
 
                             <Text style={{ marginTop: 10, fontWeight: 'bold' }}>SubLovers</Text>
                         </LabelAndOffer>
-                    </ContainerOfferItems>
 
-                    <LabelAndOffer>
+                        <LabelAndOffer>
                             <OfferItem>
                                 <MaterialCommunityIcons name="truck-fast-outline" size={30} color="#666" />
                             </OfferItem>
 
                             <Text style={{ marginTop: 10, fontWeight: 'bold' }}>Receba em</Text>
-                            <Text style={{ marginTop: 10, fontWeight: 'bold' }}>3 horas</Text>
+                            <Text style={{ fontWeight: 'bold' }}>3 horas</Text>
                         </LabelAndOffer>
+                    </ContainerOfferItems>
 
                 </ScrollHorizontal>
                 

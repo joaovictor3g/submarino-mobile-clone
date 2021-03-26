@@ -1,9 +1,10 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { FooterMenu, Button } from './styles'; 
 
 import { FontAwesome, AntDesign, MaterialIcons, MaterialCommunityIcons, Feather } from '@expo/vector-icons';
+import { NumberOfItems } from '../NumberOfItems';
 
 interface FooterParams {
     currentPage: string;
@@ -65,11 +66,14 @@ export function Footer({ currentPage }: FooterParams) {
             <Button
                 onPress={handleNavigateToFavorites}
             >
-                <MaterialIcons 
-                    name="favorite-outline" 
-                    size={30} 
-                    color={currentPage==="fav" ? "#2D73FB": "#6666"}     
-                />
+                <View>
+                    <NumberOfItems />
+                    <MaterialIcons 
+                        name="favorite-outline" 
+                        size={30} 
+                        color={currentPage==="fav" ? "#2D73FB": "#6666"}     
+                    />
+                </View>
                 <Text
                     style={[{ color: "#6666", fontSize: 11 }, currentPage==="fav" && { color: "#2D73FB" }]}
                 >Favoritos</Text>
@@ -77,12 +81,15 @@ export function Footer({ currentPage }: FooterParams) {
 
             <Button
                 onPress={handleNavigateToCart}
-            >
-                <MaterialCommunityIcons 
-                    name="cart-plus" 
-                    size={30} 
-                    color={currentPage==="cart" ? "#2D73FB": "#6666"}     
-                />
+            >   
+                <View>
+                    <NumberOfItems />
+                    <MaterialCommunityIcons 
+                        name="cart-plus" 
+                        size={30} 
+                        color={currentPage==="cart" ? "#2D73FB": "#6666"}     
+                    />
+                </View>
                 <Text
                     style={[{ color: "#6666", fontSize: 11 }, currentPage==="cart" && { color: "#2D73FB" }]}
                 >Carrinho</Text>
@@ -91,14 +98,19 @@ export function Footer({ currentPage }: FooterParams) {
             <Button
                 onPress={handleNavigateToMore}
             >
-                <Feather 
-                    name="more-horizontal" 
-                    size={40} 
-                    color={currentPage==="more" ? "#2D73FB": "#6666"}     
-                />
+                <View>
+                    <NumberOfItems />
+                    <Feather 
+                        name="more-horizontal" 
+                        size={40} 
+                        color={currentPage==="more" ? "#2D73FB": "#6666"}     
+                    />
+                </View>
                 <Text
                     style={[{ color: "#6666", fontSize: 11 }, currentPage==="more" && { color: "#2D73FB" }]}
-                >Mais</Text>
+                >
+                    Mais
+                </Text>
             </Button>
         </FooterMenu>
     );
