@@ -1,6 +1,6 @@
 #  UI Clone Submarino
 
-![Projeto](https://img.shields.io/badge/joaovictor3g-moveit-dark)
+![Projeto](https://img.shields.io/badge/joaovictor3g-UIClone-dark)
 ![licence mit](https://img.shields.io/badge/license-MIT-green)
 
 ### The idea is clonning UI of [Submarino](https://www.submarino.com.br/) mobile version. This project only implements an UI clone, meaning there's no anything functional, also buttons to navigate between screens.
