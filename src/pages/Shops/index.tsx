@@ -6,7 +6,10 @@ import { Header } from '../../components/Header';
 export function Shops() {
     return (
         <>
-            <Header />
+            <Header 
+                title="Navegue pelas lojas"
+                hasInput    
+            />
             <View />
             <Footer currentPage="shops"/>
         </>

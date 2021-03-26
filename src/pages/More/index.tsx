@@ -6,7 +6,7 @@ import { Header } from '../../components/Header';
 export function More() {
     return (
         <>
-            <Header />
+            <Header title="Mais"/>
             <View />
             <Footer currentPage="more"/>
         </>

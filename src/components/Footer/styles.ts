@@ -10,7 +10,7 @@ export const FooterMenu = styled.View`
     height: 70px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;;
+    justify-content: space-between;
     padding: 5%;
     align-items: center;
 `;

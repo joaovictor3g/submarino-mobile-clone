@@ -6,7 +6,10 @@ import { Header } from '../../components/Header';
 export function Favorites() {
     return (
         <>
-            <Header />
+            <Header 
+                title="Favoritos"
+
+            />
             <View />
             <Footer currentPage="fav"/>
         </>

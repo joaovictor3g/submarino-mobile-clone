@@ -7,7 +7,9 @@ import { Container } from './styles';
 export function Highlights() {
     return (
         <>
-            <Header />
+            <Header 
+                hasInput
+            />
             <Container>
                 
             </Container>

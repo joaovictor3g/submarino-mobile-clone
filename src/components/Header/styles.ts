@@ -1,12 +1,24 @@
 import styled from 'styled-components/native';
 
-export const HeaderContainer = styled.View`
+interface HeaderContainerProps {
+    hasMoreContent?:boolean;
+}
+
+export const HeaderContainer = styled.View<HeaderContainerProps>`
     width: 100%;
     background: #2D73FB;
     position: absolute;
     top: 0;
-    height: 130px;
+    height: ${props => props.hasMoreContent ? `${170}px`: `${130}px` };
     padding: 5%;
+`;
+
+export const Title = styled.Text`
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
 `;
 
 export const Input = styled.TextInput`

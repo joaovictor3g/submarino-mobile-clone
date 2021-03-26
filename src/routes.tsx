@@ -15,7 +15,7 @@ export function Routes() {
         <NavigationContainer>
             <Tab.Navigator
                 screenOptions={{
-                    tabBarVisible: false
+                    tabBarVisible: false,
                 }}
             >
                 <Tab.Screen name="/" component={Highlights} />
