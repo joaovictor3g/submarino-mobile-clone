@@ -2,15 +2,18 @@ import styled from 'styled-components/native';
 
 interface HeaderContainerProps {
     hasMoreContent?:boolean;
+    morePage?:boolean;
 }
 
 export const HeaderContainer = styled.View<HeaderContainerProps>`
     width: 100%;
     background: #2D73FB;
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
     height: ${props => props.hasMoreContent ? `${170}px`: `${130}px` };
+    ${props => props.morePage && "height: 70px;"};
     padding: 5%;
+    justify-content: center;
 `;
 
 export const Title = styled.Text`
