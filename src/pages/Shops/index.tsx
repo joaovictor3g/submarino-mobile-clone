@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 import { Container, Item, Content, Text, Scroll, Image, BorderImage } from './styles';
 import { AntDesign } from '@expo/vector-icons';
+import { Address } from '../../components/Address';
 
 export function Shops() {
+    const [isOpenModal, setIsOpenModal] = useState(false);
     return (
         <>
             <Header 
                 title="Navegue pelas lojas"
-                hasInput    
+                hasInput 
+                openModal={()=>setIsOpenModal(true)}   
             />
 
             <Container>
@@ -145,35 +148,35 @@ export function Shops() {
                         <Item>
                             <Text style={{ fontSize: 16 }}>Prime</Text>
                             <BorderImage>
-                                <Image source={require('../../assets/image-shop-11.png')}/>
+                                {/* <Image source={require('../../assets/image-shop-11.png')}/> */}
                             </BorderImage>
                         </Item>
 
                         <Item>
                             <Text style={{ fontSize: 16 }}>Cartão Submarino</Text>
                             <BorderImage>
-                                <Image source={require('../../assets/image-shop-11.png')}/>
+                                {/* <Image source={require('../../assets/image-shop-11.png')}/> */}
                             </BorderImage>
                         </Item>
 
                         <Item>
                             <Text style={{ fontSize: 16 }}>Ame Digital</Text>
                             <BorderImage>
-                                <Image source={require('../../assets/image-shop-11.png')}/>
+                                {/* <Image source={require('../../assets/image-shop-11.png')}/> */}
                             </BorderImage>
                         </Item>
 
                         <Item>
                             <Text style={{ fontSize: 16 }}>Viages</Text>
                             <BorderImage>
-                                <Image source={require('../../assets/image-shop-11.png')}/>
+                                {/* <Image source={require('../../assets/image-shop-11.png')}/> */}
                             </BorderImage>
                         </Item>
 
                         <Item>
                             <Text style={{ fontSize: 16 }}>Gift Card</Text>
                             <BorderImage>
-                                <Image source={require('../../assets/image-shop-11.png')}/>
+                                {/* <Image source={require('../../assets/image-shop-11.png')}/> */}
                             </BorderImage>
                         </Item>
                         
@@ -187,6 +190,7 @@ export function Shops() {
                 </Scroll>
             </Container>
             <Footer currentPage="shops"/>
+            { isOpenModal && <Address closeModal={()=>setIsOpenModal(false)}/> }
         </>
     );
 }

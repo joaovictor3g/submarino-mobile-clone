@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
-import { SafeArea, ScrollInItems, Button, TextButton, ButtonGroup } from './styles';
+import { SafeArea, ScrollInItems, Button, TextButton, ButtonGroup, VersionContainer, Version, DevelopedBy } from './styles';
 import { AntDesign } from '@expo/vector-icons';
 
 interface ButtonParams {
@@ -117,7 +117,7 @@ export function More() {
                             marginBottom: '2%',
                             color: "#999"
                         }}>
-                            CENTRAL DE ATENDIMENTO
+                            SOBRE O APP
                         </Text>
 
                         { aboutAppItems.map(about => (
@@ -129,6 +129,13 @@ export function More() {
                             </Button>
                         )) }
                     </ButtonGroup>
+
+                    <VersionContainer>
+                        <Version>Clone V1.0</Version>
+                        <DevelopedBy>
+                            Developed by: João Victor
+                        </DevelopedBy>
+                    </VersionContainer>
 
                 </ScrollInItems>
             </SafeArea>

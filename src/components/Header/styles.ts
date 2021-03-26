@@ -12,7 +12,6 @@ export const HeaderContainer = styled.View<HeaderContainerProps>`
     top: 0; */
     height: ${props => props.hasMoreContent ? `${170}px`: `${130}px` };
     ${props => props.morePage && "height: 70px;"};
-    padding: 5%;
     justify-content: center;
 `;
 
@@ -37,13 +36,13 @@ export const Input = styled.TextInput`
 export const Separator = styled.View`
     width: 100%  !important;
     padding: 0  !important;
-    background: #000;
-    height: 1px;
+    background: #ddd;
+    height: 0.5px;
     margin-top: 10px;
     margin-bottom: 6px;
 `;
 
-export const AddressContent = styled.View`
+export const AddressContent = styled.TouchableOpacity`
     flex-direction: row;
     display: flex;
     justify-content: space-between;

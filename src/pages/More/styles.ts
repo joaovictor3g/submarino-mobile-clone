@@ -53,3 +53,18 @@ export const TextButton = styled.Text<TextButtonProps>`
     justify-content: space-between;
     
 `;
+
+export const VersionContainer = styled.View`
+    padding: 5%;
+
+`;
+
+export const Version = styled.Text`
+    font-weight: bold;
+    color: #6666;
+    font-size: 17px;
+`;
+
+export const DevelopedBy = styled.Text`
+    color: #ccc;
+`;
