@@ -1,24 +1,29 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { Highlights } from './pages/Highlights';
+import { Shops } from './pages/Shops';
+import { Favorites } from './pages/Favorites';
+import { Cart } from './pages/Cart';
+import { More } from './pages/More';
 
-const AppStack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 export function Routes() {
     return (
         <NavigationContainer>
-            <AppStack.Navigator
+            <Tab.Navigator
                 screenOptions={{
-                    headerShown: false,
-                    cardStyle: {
-                        backgroundColor: "#f0f0f5"
-                    }
+                    tabBarVisible: false
                 }}
             >
-                <AppStack.Screen name="/" component={Highlights} />
-            </AppStack.Navigator>
+                <Tab.Screen name="/" component={Highlights} />
+                <Tab.Screen name="/shops" component={Shops} />
+                <Tab.Screen name="/favorites" component={Favorites} />
+                <Tab.Screen name="/cart" component={Cart} />
+                <Tab.Screen name="/more" component={More} />
+            </Tab.Navigator>
         </NavigationContainer>
     );
 }
