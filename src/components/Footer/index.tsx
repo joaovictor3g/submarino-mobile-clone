@@ -43,7 +43,7 @@ export function Footer({ currentPage }: FooterParams) {
                     color={currentPage==="highlights" ? "#2D73FB": "#6666"} 
                 />
                 <Text 
-                    style={[{ color: "#6666", fontWeight: 'bold' }, currentPage==="highlights" && { color: "#2D73FB" }]}
+                    style={[{ color: "#6666", fontSize: 11 }, currentPage==="highlights" && { color: "#2D73FB" }]}
                 >
                         Destaques
                 </Text>
@@ -58,7 +58,7 @@ export function Footer({ currentPage }: FooterParams) {
                     color={currentPage==="shops" ? "#2D73FB": "#6666"}    
                 />
                 <Text
-                    style={[{ color: "#6666", fontWeight: 'bold' }, currentPage==="shops" && { color: "#2D73FB" }]}
+                    style={[{ color: "#6666", fontSize: 11 }, currentPage==="shops" && { color: "#2D73FB" }]}
                 >Lojas</Text>
             </Button>
 
@@ -71,7 +71,7 @@ export function Footer({ currentPage }: FooterParams) {
                     color={currentPage==="fav" ? "#2D73FB": "#6666"}     
                 />
                 <Text
-                    style={[{ color: "#6666", fontWeight: 'bold' }, currentPage==="fav" && { color: "#2D73FB" }]}
+                    style={[{ color: "#6666", fontSize: 11 }, currentPage==="fav" && { color: "#2D73FB" }]}
                 >Favoritos</Text>
             </Button>
 
@@ -84,7 +84,7 @@ export function Footer({ currentPage }: FooterParams) {
                     color={currentPage==="cart" ? "#2D73FB": "#6666"}     
                 />
                 <Text
-                    style={[{ color: "#6666", fontWeight: 'bold' }, currentPage==="cart" && { color: "#2D73FB" }]}
+                    style={[{ color: "#6666", fontSize: 11 }, currentPage==="cart" && { color: "#2D73FB" }]}
                 >Carrinho</Text>
             </Button>
 
@@ -97,7 +97,7 @@ export function Footer({ currentPage }: FooterParams) {
                     color={currentPage==="more" ? "#2D73FB": "#6666"}     
                 />
                 <Text
-                    style={[{ color: "#6666", fontWeight: 'bold' }, currentPage==="more" && { color: "#2D73FB" }]}
+                    style={[{ color: "#6666", fontSize: 11 }, currentPage==="more" && { color: "#2D73FB" }]}
                 >Mais</Text>
             </Button>
         </FooterMenu>
