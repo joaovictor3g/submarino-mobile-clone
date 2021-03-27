@@ -7,6 +7,7 @@ import { Shops } from './pages/Shops';
 import { Favorites } from './pages/Favorites';
 import { Cart } from './pages/Cart';
 import { More } from './pages/More';
+import { WoWOffers } from './pages/WoWOffers';
 
 const Tab = createBottomTabNavigator();
 
@@ -23,6 +24,7 @@ export function Routes() {
                 <Tab.Screen name="/favorites" component={Favorites} />
                 <Tab.Screen name="/cart" component={Cart} />
                 <Tab.Screen name="/more" component={More} />
+                <Tab.Screen name="/wow/offers" component={WoWOffers} />
             </Tab.Navigator>
         </NavigationContainer>
     );

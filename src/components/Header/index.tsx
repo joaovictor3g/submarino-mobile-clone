@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { HeaderContainer, HeaderText, Input, Separator, AddressContent, Title } from "./styles";
 import { Ionicons, AntDesign } from '@expo/vector-icons';
 import { View } from 'react-native';
@@ -11,13 +11,15 @@ interface HeaderProps {
     morePage?:boolean;
     openModal?:()=>void;
     isOpenModal?:boolean;
+    children?: ReactNode;
 };
 
-export function Header({ title, hasInput=false, hasAddress=true, hasSeparator=true, morePage=false, openModal }: HeaderProps) {
+export function Header({ title, hasInput=false, hasAddress=true, hasSeparator=true, morePage=false, openModal, children }: HeaderProps) {
     
     
     return (
         <HeaderContainer morePage={morePage} hasMoreContent={title!==undefined && hasInput && hasSeparator}>
+            { children && children }
             { title && <Title>{title}</Title> }
             
             {hasInput && 

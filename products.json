@@ -1,0 +1,33 @@
+[
+    {
+        "_id": 1,
+        "name": "Headset Gamer sem Fio",
+        "current_price": 899.99,
+        "image": "./src/assets/image-wow-1.png"
+    },
+    {
+        "_id": 2,
+        "name": "Game - Hitman III - Xbox",
+        "current_price": 219.99,
+        "image": "./src/assets/image-shop-10.png"
+    }
+    ,
+    {
+        "_id": 3,
+        "name": "Smart TV 50 LG 50UN7310 UHD 4K" ,
+        "current_price": 2299.99,
+        "image": "../../assets/image-shop-1"
+    },
+    {
+        "_id": 4,
+        "name": "JBL Home Cinema SB110",
+        "current_price": 854.99,
+        "image": "../../assets/image-shop-1"
+    },
+    {
+        "_id": 5,
+        "name": "Lavadora Electrolux 14kg",
+        "current_price": 1439.10,
+        "image": "../../assets/image-shop-1"
+    }
+]

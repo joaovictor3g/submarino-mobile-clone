@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Text } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Container, ContainerOfferItems, LabelAndOffer, OfferItem, ScrollHorizontal } from './styles';
@@ -8,6 +9,12 @@ import { Address } from "../../components/Address";
 
 export function Highlights() {
     const [isOpenModal, setIsOpenModal] = useState(false);
+    const { navigate } = useNavigation();
+
+    function handleNavigateToWoWOffers() {
+        navigate('/wow/offers');
+    }
+
     return (
         <>
             <Header 
@@ -22,7 +29,7 @@ export function Highlights() {
                 >
                     <ContainerOfferItems>
                         <LabelAndOffer>
-                            <OfferItem>
+                            <OfferItem onPress={handleNavigateToWoWOffers}>
                                 <Text  style={{ fontWeight: 'bold', fontSize: 20, color: "#666" }}>WOW</Text>
                             </OfferItem>
 
